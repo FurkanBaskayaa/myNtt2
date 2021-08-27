@@ -1,0 +1,31 @@
+﻿<Properties StartupConfiguration="{35E4E1F8-A2DA-4922-B0D0-344F253B06D9}|Default">
+  <MonoDevelop.Ide.ItemProperties.project1demo PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="project1demo/appsettings.json">
+    <Files>
+      <File FileName="project1demo/Controllers/CatagoryTranslationsController.cs" Line="24" Column="1" />
+      <File FileName="project1demo/Controllers/ProductTranslationsController.cs" />
+      <File FileName="project1demo/Controllers/BelongsToController.cs" />
+      <File FileName="project1demo/Startup.cs" />
+      <File FileName="project1demo/appsettings.json" Line="8" Column="30" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="project1demo" expanded="True">
+            <Node name="project1demo" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="appsettings.json" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

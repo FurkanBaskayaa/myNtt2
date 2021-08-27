@@ -1,0 +1,23 @@
+<div class="container">
+    <h1 class="d-flex justify-content-center" style="margin-top: 20px;">Mordor Market</h1>
+    <button class=" btn btn-primary" (click)="onLanguageClick('english')">
+        EN
+    </button>
+    <span style="margin-left: 15px;">
+        <button class="btn btn-primary" (click)="onLanguageClick('turkish')">
+            TR
+        </button>
+    </span>
+    <h3 *ngIf="language === 'english'; else elseBlock3" style="margin-top: 25px;">Catagories:</h3>
+    <ng-template #elseBlock3><h3 style="margin-top: 25px;">Katagoriler:</h3></ng-template>
+    <nav class="navbar navbar-expand-sm bg-light navbar-dark">
+        <ul class="navbar-nav">
+            <li class="nav-item" *ngFor="let dataItem of CatagoryList">
+                <button class="m-1 btn btn-light btn-outline-primary" (click)="onCatagoryClick(dataItem.catagory_id)">
+                    {{dataItem.catagory_name}}
+                </button>
+            </li>
+        </ul>
+    </nav>
+    <router-outlet></router-outlet>
+</div>

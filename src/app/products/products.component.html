@@ -1,0 +1,50 @@
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>
+                Product Name
+            </th>
+            <th>
+                Price
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let dataItem of TranslatedProductsList">
+            <td>
+                {{dataItem.product_name}}
+            </td>
+            <td>
+                {{dataItem.price}}{{dataItem.currency}}
+            </td>
+            <td>
+                <button (click)="onSummaryClick(dataItem.summary)" style="float: right;" type="button" class="btn btn-dark mr1" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <p *ngIf="lng === 'english'; else elseBlock2">Summary</p>
+                    <ng-template #elseBlock2>Özet</ng-template>
+                </button>
+                <button type="button" class="btn btn-dark mr1" style="float: right; margin-right: 15px;">
+                    <p *ngIf="lng === 'english'; else elseBlock1">Buy</p>
+                    <ng-template #elseBlock1>Al</ng-template>
+                </button>
+                
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Summary</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          {{smry}}
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>  
+            </td>
+        </tr>
+    </tbody>
+</table>
