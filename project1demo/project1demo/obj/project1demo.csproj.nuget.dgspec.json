@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/furkanbaskaya/Desktop/myNtt/project1demo/project1demo/project1demo.csproj": {}
+    "/Users/furkanbaskaya/Desktop/myNtt2/project1demo/project1demo/project1demo.csproj": {}
   },
   "projects": {
-    "/Users/furkanbaskaya/Desktop/myNtt/project1demo/project1demo/project1demo.csproj": {
+    "/Users/furkanbaskaya/Desktop/myNtt2/project1demo/project1demo/project1demo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/furkanbaskaya/Desktop/myNtt/project1demo/project1demo/project1demo.csproj",
+        "projectUniqueName": "/Users/furkanbaskaya/Desktop/myNtt2/project1demo/project1demo/project1demo.csproj",
         "projectName": "project1demo",
-        "projectPath": "/Users/furkanbaskaya/Desktop/myNtt/project1demo/project1demo/project1demo.csproj",
+        "projectPath": "/Users/furkanbaskaya/Desktop/myNtt2/project1demo/project1demo/project1demo.csproj",
         "packagesPath": "/Users/furkanbaskaya/.nuget/packages/",
-        "outputPath": "/Users/furkanbaskaya/Desktop/myNtt/project1demo/project1demo/obj/",
+        "outputPath": "/Users/furkanbaskaya/Desktop/myNtt2/project1demo/project1demo/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/furkanbaskaya/.config/NuGet/NuGet.Config"

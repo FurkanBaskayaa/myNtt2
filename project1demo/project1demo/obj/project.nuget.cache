@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "I1JkFApyFokah509I0H2pzckDu93HxDZzjruAMOaHscijLaHx21jYCyu93yTSOmoqglRKmfmF9IJ5yC2HeMw3Q==",
+  "dgSpecHash": "8BRsD78Z3TdMq27BrXD606/Bgbe2VVgQLKBQqHFL5rww7W0iYhh0O9nHHU/mWOmL5mJXYOLxil35OGBtFEcPRQ==",
   "success": true,
-  "projectFilePath": "/Users/furkanbaskaya/Desktop/myNtt/project1demo/project1demo/project1demo.csproj",
+  "projectFilePath": "/Users/furkanbaskaya/Desktop/myNtt2/project1demo/project1demo/project1demo.csproj",
   "expectedPackageFiles": [
     "/Users/furkanbaskaya/.nuget/packages/bouncycastle.netcore/1.8.5/bouncycastle.netcore.1.8.5.nupkg.sha512",
     "/Users/furkanbaskaya/.nuget/packages/google.protobuf/3.14.0/google.protobuf.3.14.0.nupkg.sha512",

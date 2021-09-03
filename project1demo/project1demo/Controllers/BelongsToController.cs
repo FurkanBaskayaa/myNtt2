@@ -17,6 +17,7 @@ namespace project1demo.Controllers
     public class BelongsToController : Controller
     {
         private readonly IConfiguration _configuration;
+
         public BelongsToController(IConfiguration configuration)
         {
             _configuration = configuration;
@@ -49,6 +50,35 @@ namespace project1demo.Controllers
                 }
             }
             return new JsonResult(table);
+        }
+
+        [HttpPost]
+        public JsonResult Post(BelongsTo bt)
+        {
+            string query = @"insert into demo.belongs_to(product_id, catagory_id)
+                             values(@product_id, @catagory_id)";
+
+            DataTable table = new DataTable();
+
+            string sqlDataSource = _configuration.GetConnectionString("DemoAppCon");
+
+            MySqlDataReader myReader;
+
+            using (MySqlConnection mycon = new MySqlConnection(sqlDataSource))
+            {
+                mycon.Open();
+                using (MySqlCommand myCommand = new MySqlCommand(query, mycon))
+                {
+                    myCommand.Parameters.AddWithValue("@product_id", bt.product_id);
+                    myCommand.Parameters.AddWithValue("@catagory_id", bt.catagory_id);
+                    myReader = myCommand.ExecuteReader();
+                    table.Load(myReader);
+
+                    myReader.Close();
+                    mycon.Close();
+                }
+            }
+            return new JsonResult("New bt Added");
         }
     }
 }

@@ -2,11 +2,9 @@
   <MonoDevelop.Ide.ItemProperties.project1demo PreferredExecutionTarget="/Applications/Safari.app" />
   <MonoDevelop.Ide.Workbench ActiveDocument="project1demo/appsettings.json">
     <Files>
-      <File FileName="project1demo/Controllers/CatagoryTranslationsController.cs" Line="24" Column="1" />
-      <File FileName="project1demo/Controllers/ProductTranslationsController.cs" />
-      <File FileName="project1demo/Controllers/BelongsToController.cs" />
-      <File FileName="project1demo/Startup.cs" />
-      <File FileName="project1demo/appsettings.json" Line="8" Column="30" />
+      <File FileName="project1demo/Controllers/CatagoryController.cs" Line="201" Column="27" />
+      <File FileName="project1demo/Controllers/ProductsController.cs" Line="285" Column="54" />
+      <File FileName="project1demo/appsettings.json" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
