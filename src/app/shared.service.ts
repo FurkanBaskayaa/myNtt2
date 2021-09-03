@@ -10,13 +10,13 @@ readonly APIUrl="https://localhost:5001/api";
   constructor(private http:HttpClient) { }
 
   getCatagoryList(val:any):Observable<any[]>{
-    return this.http.get<any>(this.APIUrl+'/CatagoryTranslations/'+val);
+    return this.http.get<any>(this.APIUrl+'/Catagory/'+val);
   }
   getProductsOfACatagory(val:any):Observable<any[]>{
     return this.http.get<any>(this.APIUrl+'/BelongsTo/'+val);
   }
   getTranslatedProductList(idArr:any[],lng:any):Observable<any[]>{
-    return this.http.get<any>(this.APIUrl+'/ProductTranslations/'+lng,{
+    return this.http.get<any>(this.APIUrl+'/Products/'+lng,{
       params:{
         idArr:idArr
       }
